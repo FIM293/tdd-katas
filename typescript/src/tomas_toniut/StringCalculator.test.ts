@@ -34,5 +34,11 @@ describe(StringCalculator, () => {
     expect(result).toEqual(15);
   });
 
+  it("debe retornar la suma de los numeros, si la entrada son numeros delimitados por comas", () => {
+    const stringCalculator = new StringCalculator();
+    const result = stringCalculator.add('15,25');
+    expect(result).toEqual(40);
+  });
+
 
 });
