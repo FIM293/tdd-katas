@@ -1,9 +1,9 @@
 export class StringCalculator {
   constructor() {}
 
-  add(input) {
+  add(input:string) {
     if (input === '')
       return 0;
-    return null;
+    return Number (input);
   }
 }
