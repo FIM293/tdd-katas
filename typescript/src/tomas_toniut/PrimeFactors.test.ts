@@ -29,7 +29,11 @@ describe(PrimeFactors, () => {
     const result = sut.generate(3);
     expect(result).toEqual([3]);
   });
-
+  it("Debe retornar un arreglo [2, 2] si el numero es 4", () => {
+    const sut = new PrimeFactors();
+    const result = sut.generate(4);
+    expect(result).toEqual([2,2]);
+  });
 
 
 });
