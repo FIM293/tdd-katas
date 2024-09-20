@@ -34,6 +34,11 @@ describe(PrimeFactors, () => {
     const result = sut.generate(4);
     expect(result).toEqual([2,2]);
   });
+  it("Debe retornar un arreglo [5] si el numero es 5", () => {
+    const sut = new PrimeFactors();
+    const result = sut.generate(5);
+    expect(result).toEqual([5]);
+  });
 
 
 });
