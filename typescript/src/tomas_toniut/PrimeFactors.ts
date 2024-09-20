@@ -10,6 +10,8 @@ export class PrimeFactors {
       factores = [2];
     else if (number === 3)
       factores = [3];
+    else if (number === 5)
+      factores = [5];
     else {
       let divisor = 2;
       while (number % divisor === 0) {
