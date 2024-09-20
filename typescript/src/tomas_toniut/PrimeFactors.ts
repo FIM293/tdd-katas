@@ -1,24 +1,26 @@
 export class PrimeFactors {
   constructor() {}
 
-  generate(number) {
+  generate(numero) {
     let factores = [];
 
-    if (number ===1)
+    if (numero ===1)
       return factores;
-    else if (number === 2)
+    else if (numero === 2)
       factores = [2];
-    else if (number === 3)
+    else if (numero === 3)
       factores = [3];
-    else if (number === 5)
+    else if (numero === 5)
       factores = [5];
     else {
       let divisor = 2;
-      while (number % divisor === 0) {
-        factores.push(divisor);
-        number = number / divisor;
+      while (numero>1){
+        while (numero % divisor === 0) {
+          factores.push(divisor);
+          numero = numero / divisor;
+        }
+        divisor ++;
       }
-
     }
     return factores;
   }
