@@ -69,5 +69,11 @@ describe(StringCalculator, () => {
     expect(result).toEqual(3);
   });
 
+  it("debe permitir un delimitador de un multiples carácteres", () => {
+    const stringCalculator = new StringCalculator();
+    const result = stringCalculator.add('//###\n1###2');
+    expect(result).toEqual(3);
+  });
+
 
 });
