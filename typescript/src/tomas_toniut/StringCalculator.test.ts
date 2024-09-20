@@ -40,5 +40,11 @@ describe(StringCalculator, () => {
     expect(result).toEqual(40);
   });
 
+  it("debe retornar la suma de los numeros, si la entrada son numeros delimitados por baja de linea", () => {
+    const stringCalculator = new StringCalculator();
+    const result = stringCalculator.add('15\n25');
+    expect(result).toEqual(40);
+  });
+
 
 });
