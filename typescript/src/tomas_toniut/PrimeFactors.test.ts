@@ -52,4 +52,10 @@ describe(PrimeFactors, () => {
     expect(result).toEqual([7]);
   });
 
+  it("Debe retornar un arreglo [2, 2, 2] si el numero es 8", () => {
+    const sut = new PrimeFactors();
+    const result = sut.generate(8);
+    expect(result).toEqual([2, 2, 2]);
+  });
+
 });
