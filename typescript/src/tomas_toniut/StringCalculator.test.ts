@@ -52,5 +52,10 @@ describe(StringCalculator, () => {
     expect(result).toEqual(10);
   });
 
+  it("debe retornar Error, si la entrada son numeros negativos", () => {
+    const stringCalculator = new StringCalculator();
+    expect(() =>(stringCalculator.add('-2,-4'))).toThrow('negativos no están permitidos: -2,-4');
+  });
+
 
 });
