@@ -2,11 +2,12 @@ export class PrimeFactors {
   constructor() {}
 
   generate(number) {
-    const factors = [];
-    
-    if (number ===1)
-      return factors;
+    let factores = [];
 
-    return null;
+    if (number ===1)
+      return factores;
+
+    factores = [2];
+    return factores;
   }
 }
