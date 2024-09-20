@@ -6,8 +6,10 @@ export class PrimeFactors {
 
     if (number ===1)
       return factores;
-
-    factores = [2];
+    else if (number === 2)
+      factores = [2];
+    else if (number === 3)
+      factores = [3];
     return factores;
   }
 }
