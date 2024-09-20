@@ -57,5 +57,11 @@ describe(StringCalculator, () => {
     expect(() =>(stringCalculator.add('-2,-4'))).toThrow('negativos no están permitidos: -2,-4');
   });
 
+  it("debe ignorar los numeros mayores a 1000", () => {
+    const stringCalculator = new StringCalculator();
+    const result = stringCalculator.add('1,2,1001');
+    expect(result).toEqual(3);
+  });
+
 
 });
