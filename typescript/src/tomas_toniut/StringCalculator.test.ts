@@ -46,5 +46,11 @@ describe(StringCalculator, () => {
     expect(result).toEqual(40);
   });
 
+  it("debe retornar la suma de los numeros, si la entrada son numeros delimitados por baja de linea o coma", () => {
+    const stringCalculator = new StringCalculator();
+    const result = stringCalculator.add('1\n2,3\n4');
+    expect(result).toEqual(10);
+  });
+
 
 });
