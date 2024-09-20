@@ -1,14 +1,9 @@
 import { PrimeFactors } from "./PrimeFactors";
 
 describe(PrimeFactors, () => {
-  it("should return [] when number is 1", () => {
-    // arrange
+  it("Debe retornar un arreglo vació si el numero es 1", () => {
     const sut = new PrimeFactors();
-
-    // act
     const result = sut.generate(1);
-
-    // assert
-    // expect(result).toEqual([]);
+    expect(result).toEqual([]);
   });
 });
