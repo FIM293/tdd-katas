@@ -34,7 +34,6 @@ describe(StringCalculator, () => {
   it("should throw an exception because negative numbers are not allowed", () => {
     const stringCalculator = new StringCalculator();
 
-    const result = stringCalculator.add("-1,2,-3");
-    expect(result).toThrow('negatives not allowed: -1,-3');
+    expect(() => stringCalculator.add("-1,2,-3")).toThrow('negatives not allowed: -1,-3');
   });
 });
