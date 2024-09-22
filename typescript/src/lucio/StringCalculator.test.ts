@@ -25,4 +25,10 @@ describe(StringCalculator, () => {
     const result = stringCalculator.add("1/n2");
     expect(result).toEqual(3);
   });
+  it("should return the sum of the three numbers delimited either by coma or by newline", () => {
+    const stringCalculator = new StringCalculator();
+
+    const result = stringCalculator.add("1/n2,3/n4");
+    expect(result).toEqual(10);
+  });
 });
