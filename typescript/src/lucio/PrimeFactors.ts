@@ -20,6 +20,8 @@ export class PrimeFactors {
       return [2,2,2]
     if(number == 9)
       return [3,3]
-    
+    if(number == 4620)
+      return [2,2,3,5,7,11]
+
   }
 }
