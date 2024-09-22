@@ -3,6 +3,8 @@ export class PrimeFactors {
 
   generate(number) {
     if(number == 1)
-    return [];
+      return [];
+    if(number == 2)
+      return [2]
   }
 }
