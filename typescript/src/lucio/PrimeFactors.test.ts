@@ -1,0 +1,54 @@
+import { PrimeFactors } from "./PrimeFactors";
+
+describe(PrimeFactors, () => {
+  it("should return [] when number is 1", () => {
+    const sut = new PrimeFactors();
+    const result = sut.generate(1);
+    expect(result).toEqual([]);
+  });
+  it("should return [2] when number is 2", () => {
+    const sut = new PrimeFactors();
+    const result = sut.generate(2);
+    expect(result).toEqual([2]);
+  });
+  it("should return [3] when number is 3", () => {
+    const sut = new PrimeFactors();
+    const result = sut.generate(3);
+    expect(result).toEqual([3]);
+  });
+  it("should return [2,2] when number is 4", () => {
+    const sut = new PrimeFactors();
+    const result = sut.generate(4);
+    expect(result).toEqual([2,2]);
+  });
+  it("should return [5] when number is 5", () => {
+    const sut = new PrimeFactors();
+    const result = sut.generate(5);
+    expect(result).toEqual([5]);
+  });
+  it("should return [2,3] when number is 6", () => {
+    const sut = new PrimeFactors();
+    const result = sut.generate(6);
+    expect(result).toEqual([2,3]);
+  });
+  it("should return [7] when number is 7", () => {
+    const sut = new PrimeFactors();
+    const result = sut.generate(7);
+    expect(result).toEqual([7]);
+  });
+  it("should return [2,2,2] when number is 8", () => {
+    const sut = new PrimeFactors();
+    const result = sut.generate(8);
+    expect(result).toEqual([2,2,2]);
+  });
+  it("should return [3,3] when number is 9", () => {
+    const sut = new PrimeFactors();
+    const result = sut.generate(9);
+    expect(result).toEqual([3,3]);
+  });
+  it("should return [2,2,3,5,7,11] when number is 4620", () => {
+    const sut = new PrimeFactors();
+    const result = sut.generate(4620);
+    expect(result).toEqual([2,2,3,5,7,11]);
+  });
+});
