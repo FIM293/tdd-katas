@@ -13,4 +13,10 @@ describe(StringCalculator, () => {
     const result = stringCalculator.add("1");
     expect(result).toEqual(1);
   });
+  it("should return the sum of the two numbers delimited by comas", () => {
+    const stringCalculator = new StringCalculator();
+
+    const result = stringCalculator.add("1,2");
+    expect(result).toEqual(3);
+  });
 });
