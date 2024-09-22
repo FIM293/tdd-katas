@@ -36,4 +36,9 @@ describe(PrimeFactors, () => {
     const result = sut.generate(7);
     expect(result).toEqual([7]);
   });
+  it("should return [2,2,2] when number is 8", () => {
+    const sut = new PrimeFactors();
+    const result = sut.generate(8);
+    expect(result).toEqual([2,2,2]);
+  });
 });
