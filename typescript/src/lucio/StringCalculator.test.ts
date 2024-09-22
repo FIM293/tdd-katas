@@ -19,4 +19,10 @@ describe(StringCalculator, () => {
     const result = stringCalculator.add("1,2");
     expect(result).toEqual(3);
   });
+  it("should return the sum of the two numbers delimited by newline", () => {
+    const stringCalculator = new StringCalculator();
+
+    const result = stringCalculator.add("1/n2");
+    expect(result).toEqual(3);
+  });
 });
