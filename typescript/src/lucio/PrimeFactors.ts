@@ -2,6 +2,7 @@ export class PrimeFactors {
   constructor() {}
 
   generate(number) {
-    return null;
+    if(number == 1)
+    return [];
   }
 }
