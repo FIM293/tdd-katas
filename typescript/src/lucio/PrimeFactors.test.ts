@@ -26,4 +26,9 @@ describe(PrimeFactors, () => {
     const result = sut.generate(5);
     expect(result).toEqual([5]);
   });
+  it("should return [2,3] when number is 6", () => {
+    const sut = new PrimeFactors();
+    const result = sut.generate(6);
+    expect(result).toEqual([2,3]);
+  });
 });
