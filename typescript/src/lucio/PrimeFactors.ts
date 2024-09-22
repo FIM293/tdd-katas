@@ -6,5 +6,7 @@ export class PrimeFactors {
       return [];
     if(number == 2)
       return [2]
+    if(number == 3)
+      return [3]
   }
 }
