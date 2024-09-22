@@ -46,4 +46,9 @@ describe(PrimeFactors, () => {
     const result = sut.generate(9);
     expect(result).toEqual([3,3]);
   });
+  it("should return [2,2,3,5,7,11] when number is 4620", () => {
+    const sut = new PrimeFactors();
+    const result = sut.generate(4620);
+    expect(result).toEqual([2,2,3,5,7,11]);
+  });
 });
